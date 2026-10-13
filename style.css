@@ -1,0 +1,224 @@
+/*  General  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/*  Main Container  */
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+
+/*  Page Header  */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.page-header p {
+    color: #6b7280;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+/*  Assignment Sections */
+
+.assignment-section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.section-header {
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-header h2 {
+    margin: 8px 0 4px;
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: #111827;
+}
+
+.section-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.task-number {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #eef2ff;
+    color: #4f46e5;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+/* ===== Forms ===== */
+
+form {
+    width: 100%;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 10px 14px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.form-control:focus:not(.is-valid):not(.is-invalid),
+.form-select:focus:not(.is-valid):not(.is-invalid) {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+/* Radio & Checkbox */
+
+.form-check {
+    margin-bottom: 8px;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+/* Helper text */
+
+.form-text {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+
+/*  Buttons  */
+
+.btn {
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.btn-secondary {
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.15);
+}
+
+
+/*  Validation Feedback  */
+
+.valid-feedback,
+.invalid-feedback {
+    font-weight: 500;
+}
+
+
+/* Registration Form */
+
+.registration-form {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .assignment-section {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .page-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .assignment-section {
+        padding: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
